@@ -86,8 +86,8 @@ publishing {
         maven {
             name = "central"
             credentials {
-                username "$centralUsername"
-                password "$centralPassword"
+//                username "$centralUsername"
+//                password "$centralPassword"
             }
             url = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
         }
@@ -95,7 +95,7 @@ publishing {
 }
 
 signing {
-    sign publishing.publications.mavenJava
+//    sign publishing.publications.mavenJava
 }
 
 dependencies {
